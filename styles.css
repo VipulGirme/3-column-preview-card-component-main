@@ -28,7 +28,6 @@ body {
     width: 900px;
     max-width: 900px;
     border-radius: 10px;
-    background-color: wheat;
     overflow: hidden;
 }
 .column {
@@ -68,7 +67,7 @@ body {
     font-family: 'Lexcand Decay', sans-serif;
     font-weight: 400;
     padding-top: 25px;
-    padding: 8px 0px 12px;
+    padding: 8px 0px 75px;
 }
 
 .column img {
@@ -82,6 +81,14 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 12px 30px;
+    font-family: 'Lexcand Decay', sans-serif;
+    font-size: 15px;
+}
+
+.column a:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
 }
 
 .left a {
@@ -95,3 +102,24 @@ body {
 .right a {
     color: var(--very-dark-cyan);
 }
+
+/* Responsive Mobile */
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 50px 0 50px 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+  }
