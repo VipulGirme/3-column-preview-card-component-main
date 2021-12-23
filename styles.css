@@ -33,7 +33,7 @@ body {
 .column {
     float: left;
     width:33.33333333%;
-    height: 450px;
+    height: 500px;
     padding: 40px 10px 40px 50px; 
 }
 .left {
